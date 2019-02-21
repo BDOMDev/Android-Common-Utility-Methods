@@ -46,7 +46,7 @@ object KeyboardUtils {
      * @param activity activity reference of the current activity
      *
      **/
-    private fun showKeyboardFromActivity(activity: Activity) {
+    fun showKeyboardFromActivity(activity: Activity) {
         val view = activity.currentFocus
         val methodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         assert(view != null)
