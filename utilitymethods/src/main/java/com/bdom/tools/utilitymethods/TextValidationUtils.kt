@@ -184,5 +184,19 @@ object TextValidationUtils {
     }
 
 
+    /**
+     * Move EditText cursor to end of text
+     *
+     * if calling immediately after calling setText please call this method in a new runnable (View.post())
+     *
+     * @param editText The EdiText to work on
+     *
+     */
+    fun moveEditTextCursorToEnd(editText: EditText){
+        editText.setSelection(editText.text.length)
+    }
+
+
+
 
 }
