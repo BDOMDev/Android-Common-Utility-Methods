@@ -44,7 +44,6 @@ object NetworkUtils {
             Log.v("connectivity", e.toString())
             return null
         }
-
     }
 
     /**
