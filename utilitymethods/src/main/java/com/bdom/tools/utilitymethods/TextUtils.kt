@@ -44,4 +44,17 @@ object TextUtils {
         }
     }
 
+    /**
+     * Capitalize the first letter of a string
+     *
+     * @param text text to be capitalized
+     *
+     * @return First letter capitalized text
+     */
+    fun capitalizeFirstLetter(text: String): String {
+        return text.substring(0, 1).toUpperCase() + text.substring(1)
+    }
+
+
+
 }

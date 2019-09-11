@@ -3,6 +3,7 @@ package com.bdom.tools.utilitymethods
 import android.app.Activity
 import android.content.Context
 import android.view.inputmethod.InputMethodManager
+import java.lang.NullPointerException
 
 
 /*
@@ -34,10 +35,14 @@ object KeyboardUtils {
      *
      */
     fun hideKeyboard(activity: Activity) {
-        val view = activity.currentFocus
-        val methodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        assert(view != null)
-        methodManager.hideSoftInputFromWindow(view!!.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
+        try {
+            val view = activity.currentFocus
+            val methodManager = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            assert(view != null)
+            methodManager.hideSoftInputFromWindow(view!!.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
+        } catch(e: NullPointerException){
+            e.printStackTrace()
+        }
     }
 
     /**

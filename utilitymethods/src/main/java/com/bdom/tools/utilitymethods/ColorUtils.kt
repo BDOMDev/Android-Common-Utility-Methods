@@ -1,10 +1,12 @@
 package com.bdom.tools.utilitymethods
 
+import android.content.Context
 import android.graphics.Color
 import kotlin.random.Random
 import android.support.annotation.ColorInt
-
-
+import android.support.annotation.ColorRes
+import android.support.v4.content.ContextCompat
+import android.widget.ImageView
 
 
 /*
@@ -85,6 +87,18 @@ object ColorUtils {
             colorString = String.format("%06X", 0xFFFFFF and color)
 
         return "#$colorString"
+    }
+
+    /**
+     * set a color filter to imageView
+     *
+     * @param context The appication context
+     * @param imageView imageView to set the color filter
+     * @param color color resource int
+     *
+     */
+    fun setTintColorToImageView(context: Context, imageView: ImageView, @ColorRes color: Int) {
+        imageView.setColorFilter(ContextCompat.getColor(context, color), android.graphics.PorterDuff.Mode.MULTIPLY);
     }
 
 }

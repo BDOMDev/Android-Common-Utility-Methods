@@ -1,11 +1,9 @@
 package com.bdom.tools.utilitymethods
 
-import android.graphics.Bitmap
-import android.graphics.Canvas
 import android.view.View
 import android.R.bool
-import android.graphics.Matrix
-import android.graphics.Paint
+import android.content.res.Resources
+import android.graphics.*
 
 
 /*
@@ -81,6 +79,11 @@ object BitmapUtils {
         m.setScale(desiredWidth.toFloat() / originalBitmap.width, desiredHeight.toFloat() / originalBitmap.height)
         canvas.drawBitmap(originalBitmap, m, Paint())
         return output
+    }
+
+
+    fun loadBitmapFromDrawable(resources: Resources, res: Int) : Bitmap {
+        return BitmapFactory.decodeResource(resources, res)
     }
 
 
