@@ -3,7 +3,7 @@ package com.bdom.tools.utilitymethods
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Context.CONNECTIVITY_SERVICE
-import android.support.v4.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.getSystemService
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.net.NetworkInfo
@@ -11,7 +11,7 @@ import android.util.Log
 import android.telephony.TelephonyManager
 import android.net.Network
 import android.os.Build
-import android.support.v4.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.getSystemService
 
 
 

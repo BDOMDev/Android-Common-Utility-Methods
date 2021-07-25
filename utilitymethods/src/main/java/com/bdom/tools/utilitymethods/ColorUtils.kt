@@ -3,9 +3,9 @@ package com.bdom.tools.utilitymethods
 import android.content.Context
 import android.graphics.Color
 import kotlin.random.Random
-import android.support.annotation.ColorInt
-import android.support.annotation.ColorRes
-import android.support.v4.content.ContextCompat
+import androidx.annotation.ColorInt
+import androidx.annotation.ColorRes
+import androidx.core.content.ContextCompat
 import android.widget.ImageView
 
 

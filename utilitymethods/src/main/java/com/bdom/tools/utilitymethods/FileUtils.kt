@@ -2,7 +2,7 @@ package com.bdom.tools.utilitymethods
 
 import android.content.Context
 import android.content.res.Resources
-import android.support.annotation.RawRes
+import androidx.annotation.RawRes
 import java.io.*
 
 object FileUtils {

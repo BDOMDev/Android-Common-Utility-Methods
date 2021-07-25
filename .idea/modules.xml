@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android-Common-Utility-Methods.iml" filepath="$PROJECT_DIR$/Android-Common-Utility-Methods.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/utilitymethods/utilitymethods.iml" filepath="$PROJECT_DIR$/utilitymethods/utilitymethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Android-Common-Utility-Methods.iml" filepath="$PROJECT_DIR$/.idea/Android-Common-Utility-Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android-Common-Utility-Methods.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android-Common-Utility-Methods.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utilitymethods/Android-Common-Utility-Methods.utilitymethods.iml" filepath="$PROJECT_DIR$/.idea/modules/utilitymethods/Android-Common-Utility-Methods.utilitymethods.iml" />
     </modules>
   </component>
 </project>
